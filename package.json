@@ -1,10 +1,7 @@
 {
-  "name": "github-example-app",
+  "name": "zapier-streamr",
   "version": "1.0.0",
-  "description": "An example app for the Zapier platform.",
-  "repository": "zapier/zapier-platform-app-github-example",
-  "homepage": "https://zapier.com/developer",
-  "author": "Zane Lyon <zane.lyon@zapier.com>",
+  "description": "Zapier app for sending data points to Streamr",
   "license": "BSD-3-Clause",
   "main": "index.js",
   "scripts": {
