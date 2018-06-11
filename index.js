@@ -1,7 +1,4 @@
-const repoTrigger = require('./triggers/repo');
-const issueCreate = require('./creates/issue');
 const streamrCreate = require('./creates/streamr');
-const issueTrigger = require('./triggers/issue');
 
 const handleHTTPError = (response, z) => {
   if (response.status >= 400) {
@@ -39,23 +36,10 @@ const App = {
     handleHTTPError
   ],
 
-  // If you want to define optional resources to simplify creation of triggers, searches, creates - do that here!
-  resources: {
-  },
-
-  // If you want your trigger to show up, you better include it here!
-  triggers: {
-    [repoTrigger.key]: repoTrigger,
-    [issueTrigger.key]: issueTrigger,
-  },
-
-  // If you want your searches to show up, you better include it here!
-  searches: {
-  },
-
-  // If you want your creates to show up, you better include it here!
+  resources: { },
+  triggers: { },
+  searches: { },
   creates: {
-    [issueCreate.key]: issueCreate,
     [streamrCreate.key]: streamrCreate
   }
 };
