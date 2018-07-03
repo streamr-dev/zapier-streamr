@@ -20,7 +20,8 @@ const App = {
           key: 'api_key',
           type: 'string',
           required: true,
-          helpText: 'Create an API key for Zapier on the Profile page.'
+          helpText: 'Create an API key for Zapier. Do this by navigating to your Streamr Profile page found by clicking the cogwheel on the upper left corner. ' +
+          'Then press the plus button found under the API keys -label. Name the key Zapier and paste it here.'
       }]
   },
 
